@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7EBEE2;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        nav {
+            background-color: #6D94C1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        nav a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(0, 0, 0);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #content {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:#7EBEE2;
+            border: 1px solid black; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #003E6B;
+        }
+
+        p {
+            margin-bottom: 15px;
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="game.html">Game Room</a>
+                <a href="review.html">Review</a>
+                <a href="faq.html">Faq's</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <a href="create.html">Create Account</a>
+        <a href="login.html">Login</a>
+        <a href="">About us</a>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <div id="content" style="margin-top: 5%;">
+        <h2>What is this all about</h2>
+
+        <p>
+            Escape The Room is an escape game room experience. You will be locked inside a game for 60 minutes while you or your team try to figure out how to escape. The game contains clues, hidden doors, and secret items to aid you in your quest.
+        </p>
+
+        <h2>Is there an age limit?</h2>
+        <p>
+            Due to the challenging nature of games, we do not allow children in the games under the age of 13, regardless of whether they are playing the game or not.
+        </p>
+
+        <h2>How many people can play at once?</h2>
+        <p>
+            Each game has a different player limit. Due to the fact that these games are designed to offer a challenge for their max player sizes, the games can be very challenging for a single player in larger games.
+        </p>
+    </div>
+
+
+</body>
+
+</html>

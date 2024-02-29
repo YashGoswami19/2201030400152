@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rooms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7EBEE2;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #6D94C1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(0, 0, 0);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: #000000;
+        }
+
+        .game-row {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .game-card {
+            width: 45%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .game-card img {
+            height: 350px;
+            width: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .book-now-button {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Adjust styling for responsiveness */
+        @media screen and (max-width: 600px) {
+            nav a,
+            .search-container {
+                float: none;
+                display: block;
+                text-align: center;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            input[type=text] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="game.html">Game Room</a>
+                <a href="review.html">Review</a>
+                <a href="faq.html">Faq's</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <a href="create.html">Create Account</a>
+        <a href="login.html">Login</a>
+        <a href="">About us</a>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <div class="game-container">
+        <h2>Game Rooms</h2>
+
+        <div class="game-row">
+            <div class="game-card" id="game1">
+                <img src="game1.jpeg" alt="The Asylum">
+                <p>The Asylum</p>
+                <p>No one has escaped alive from Dr. Saiko’s Asylum. Will you be his next kill or do you have it in you to break out from his clutches</p>
+                <a href="#" class="book-now-button">Book Now</a>
+            </div>
+
+            <div class="game-card" id="game2">
+                <img src="game2.jpeg" alt="Devils’s Den">
+                <p>Devils’s Den</p>
+                <p>Haunting...Thrilling...Spine-tingling.<br>Enter at your own risk!!</p>
+                <a href="#" class="book-now-button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="game-row">
+            <div class="game-card" id="game3">
+                <img src="game3.jpeg" alt="Trickster’s Trap">
+                <p>Trickster’s Trap</p>
+                <p>Ever been tricked into a trap with a timeline? Where the only way you escape is through it! Dare to try?</p>
+                <a href="#" class="book-now-button">Book Now</a>
+            </div>
+
+            <div class="game-card" id="game4">
+                <img src="game4.jpeg" alt="Secrets of Ra">
+                <p>Secrets of Ra</p>
+                <p>This is the race against time. Don’t stop when you are tired, stop when you are done.</p>
+                <a href="#" class="book-now-button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
